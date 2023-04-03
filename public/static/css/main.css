@@ -1,0 +1,128 @@
+#app, .wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/********************富文本自定义样式 start*********************/
+.ql-editor p{
+    position: relative;
+    font-size: 18px;
+    font-family: "microsoft yahei";
+    letter-spacing: 2px;
+    white-space: pre-line;
+    text-indent: 2em;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.font_wave {
+  position: relative;
+  font-size:18px;
+}
+.font_wave::before {
+  content: '';
+  position: absolute;
+  bottom: -0.1em;
+  width: 100%;
+  height: 0.26em;
+  background: -webkit-linear-gradient(135deg, transparent, transparent 40%, #fff001, transparent 60%, transparent 100%),
+  -webkit-linear-gradient(45deg, transparent, transparent 40%, #fff001, transparent 60%, transparent 100%);
+  background: linear-gradient(135deg, transparent, transparent 40%, #fff001, transparent 60%, transparent 100%),
+  linear-gradient(45deg, transparent, transparent 40%, #fff001, transparent 60%, transparent 100%);
+  background-size: 0.5em 0.5em;
+  background-repeat: repeat-x, repeat-x;
+}
+
+.font_dot {
+  position: relative;
+  font-size:18px;
+}
+
+.font_dot::before {
+  content: attr(dot);
+  position: absolute;
+  bottom: -0.1em;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  width: 100%;
+  text-indent:0;
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 10px;
+}
+
+.font_spell {
+  position: relative;
+  font-size:18px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 14px;
+  text-align: center;
+  text-indent: 0em;
+}
+
+.font_spell::after {
+  content: attr(text);
+  position: absolute;
+  top: -15px;
+  left: -8px;
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+
+.under_line{
+  position: relative;
+  font-size:18px;
+}
+
+.under_line::before {
+  content: '';
+  position: absolute;
+  bottom: -0.5em;
+  width: 100%;
+  height: 1em;
+  background: -webkit-linear-gradient(0deg, transparent, transparent 40%, #fff001, transparent 60%, transparent 100%);
+  background: linear-gradient(0deg, transparent, transparent 40%, #fff001, transparent 60%, transparent 100%);
+  background-repeat: repeat-x;
+  background-size: 1em 1em;
+}
+/********************富文本自定义样式 end*********************/
+
+/****************************出题组件样式 start****************************/
+
+/********************* 前面加*号*********************/
+.required-sign .el-form-item__label::before {
+  content: '*';
+  color: #f56c6c;
+  margin-right: 4px;
+}
+
+.question-tip{
+  color: #f56c6c;
+}
+
+
+/****************************出题组件样式 end****************************/
+
+
+
+/*TinyMCE富文本层级太低问题*/
+.tox-tinymce-aux {
+  z-index: 5000 !important;
+}

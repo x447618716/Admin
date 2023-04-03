@@ -1,0 +1,89 @@
+/*******************搜索栏样式Start****************/
+.search-box{
+    padding: 5px 10px;
+    border-bottom: 1px solid #d6d6d6;
+}
+.search-box label{
+    color: #606266;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.search-area{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.search-select{
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.search-input{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 300px!important;
+}
+/*******************搜索栏样式End****************/
+
+/**************内容主体样式Start****************/
+.main{
+    background-color: #ffffff;
+    padding: 20px 20px;
+}
+.page-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #626267;
+}
+.page-subtitle{
+    font-size: 18px;
+    font-weight: bold;
+    color: #46464b;
+}
+.add-label{
+    font-size: 14px;
+    color: #909090;
+    margin-left: 20px;
+}
+.add-num{
+    font-size: 14px;
+    color:red;
+    margin-left: 4px;
+}
+.page-table{
+    background-color: #F5F5F5 !important;
+    borderTop: 1px solid #bbb;
+    color: #606266 !important;
+}
+/**************内容主体样式End****************/
+
+/******************表单样式Start******************/
+
+.form-select__min{
+    width: 130px;
+}
+.form-select__small{
+    width: 180px;
+}
+.form-select__medium{
+    width: 250px;
+}
+.form-input__min{
+    width: 140px !important;
+}
+.form-input__small{
+    width: 210px !important;
+}
+.form-input__medium{
+    width: 350px  !important;
+}
+
+/*******************表单样式end*************/
+
+.operate_a{
+    font-size: 14px;
+    text-decoration: underline;
+    color: #4555b2;
+    margin-right: 20px;
+    cursor: pointer;
+}
